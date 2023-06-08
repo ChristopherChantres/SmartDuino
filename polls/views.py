@@ -6,14 +6,14 @@ def index_view (request):
   if request.POST:
     id = request.POST['id']
     if int(id) == 1:
-        redOn()
+      redOn()
     elif int(id) == 2:
-        greenOn()
+      blueOn()
     elif int(id) == 3:
-        blueOn()
+      greenOn()
     elif int(id) == 4:
-        yellowOn()
+      yellowOn()
     elif int(id) == 5:
-        allOff()
+      allOff()
     print(id)
   return render(request, 'index.html')
