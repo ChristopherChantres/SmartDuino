@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .controller import blueOn, greenOn, redOn , yellowOn, allOff
+from .controller import *
 
 # Create your views here.
 def index_view (request):
@@ -15,5 +15,7 @@ def index_view (request):
       yellowOn()
     elif int(id) == 5:
       allOff()
+    elif int(id) == 6:
+      allON()
     print(id)
   return render(request, 'index.html')

@@ -1,0 +1,116 @@
+:root {
+  --btn-clr-width: 150px;
+  --btn-clr-height: 100px;
+}
+
+body {
+  background-color: rgb(0, 11, 10);
+  color: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  border-bottom: 2px solid #00f3ff;
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  margin: 0;
+}
+
+.title h1 {
+  margin: 0;
+}
+
+.red-button {
+  width: var(--btn-clr-width);
+  height: var(--btn-clr-height);
+  color: white;
+  background-color: red;
+  border: 2px solid #00f3ff;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.blue-button {
+  width: var(--btn-clr-width);
+  height: var(--btn-clr-height);
+  color: white;
+  background-color: rgb(0, 123, 255);
+  border: 2px solid #00f3ff;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.green-button {
+  width: var(--btn-clr-width);
+  height: var(--btn-clr-height);
+  color: white;
+  background-color: rgb(102, 255, 0);
+  border: 2px solid #00f3ff;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.yellow-button {
+  width: var(--btn-clr-width);
+  height: var(--btn-clr-height);
+  color: white;
+  background-color: rgb(255, 217, 0);
+  border: 2px solid #00f3ff;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.final-button {
+  width: 220px;
+  height: var(--btn-clr-height);
+  color: white;
+  background-color: rgb(0, 11, 10);
+  border: 2px solid #00f3ff;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.container-colors {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem; 
+}
+
+.container-final {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+footer {
+  border-top: 2px solid #00f3ff;
+  margin-top: 2rem;
+}
+
+.container-author {
+  text-align: center;
+  color: rgb(0, 42, 38);
+}
+
+footer p {
+  margin-top: 1rem;
+}

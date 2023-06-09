@@ -7,48 +7,60 @@
     <!-- Bootstrap core CSS -->
     <link href="{% static 'css/slate.css' %}" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="{% static 'css/master.css' %}" rel="stylesheet">
+    <link href="{% static 'master.css' %}" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 text-center mt-2">
-          <h1>SmartDuino</h1>
-        </div>
+    <main class="container">
+      <div class="title">
+        <h1>SmartDuino</h1>
       </div>
-      <div class="row">
-        <div class="col-6 text-center">
+      <div class="container-colors">
+        <div class="">
           <form method="POST">
             {% csrf_token %}
             <input type="hidden" value="1" name="id">
-            <button class="btn btn-danger mb-2 w-100">Led rojo</button> <br>
+            <button class="red-button">Red LED</button> <br>
           </form>
           <form method="POST">
             {% csrf_token %}
             <input type="hidden" value="2" name="id">
-            <button class="btn btn-info mb-2 w-100">Led azul</button> <br>
+            <button class="blue-button">Blue LED</button> <br>
           </form>
         </div>
-          <div class="col-6 text-center">
-            <form method="POST">{% csrf_token %}
+          <div class="">
+            <form method="POST">
+              {% csrf_token %}
               <input type="hidden" value="3" name="id">
-              <button class="btn btn-success mb-2 w-100">Led verde</button> <br>
+              <button class="green-button">Green LED</button> <br>
             </form>
-            <form method="POST">{% csrf_token %}
+            <form method="POST">
+              {% csrf_token %}
               <input type="hidden" value="4" name="id">
-              <button class="btn btn-warning mb-2 w-100">Led amarillo</button> <br>
+              <button class="yellow-button">Yellow LED</button> <br>
             </form>
           </div>
       </div>
-      <div class="row">
-        <div class="col-12 text-center">
-          <form method="POST">{% csrf_token %}
+      <div class="container-final">
+        <div class="">
+          <form method="POST">
+            {% csrf_token %}
             <input type="hidden" value="5" name="id">
-            <button class="btn btn-dark mb-2 w-100">Apagar todos</button> <br>
+            <button class="final-button">Turn OFF all</button> <br>
+          </form>
+          <form method='POST'>
+            {% csrf_token %}
+            <input type="hidden" value="6" name="id">
+            <button class="final-button">Turn ON all</button>
           </form>
         </div>
       </div>
-    </div>
+    </main>
+    <footer>
+      <div class="container-author">
+        <p>Christopher Chantres</p>
+        <p>TEJM4U CPT</p>
+      </div>
+    </footer>
     <!-- Custom Scripts -->
     <script src="{% static 'js/master.js' %}"></script>
   </body>

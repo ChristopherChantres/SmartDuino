@@ -38,3 +38,10 @@ def allOff():
   board.digital[4].write(0)
   board.digital[5].write(0)
   print("Turn OFF all")
+
+def allON():
+  board.digital[2].write(1)
+  board.digital[3].write(1)
+  board.digital[4].write(1)
+  board.digital[5].write(1)
+  print('Turn ON all')
