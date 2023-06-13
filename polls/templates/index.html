@@ -52,6 +52,11 @@
             <input type="hidden" value="6" name="id">
             <button class="final-button">Turn ON all</button>
           </form>
+          <form method='POST'>
+            {% csrf_token %}
+            <input type="hidden" value="7" name="id">
+            <button class="final-button">Lightshow 1</button>
+          </form>
         </div>
       </div>
     </main>

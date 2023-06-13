@@ -17,5 +17,7 @@ def index_view (request):
       allOff()
     elif int(id) == 6:
       allON()
+    elif int(id) == 7:
+      lightshow1()
     print(id)
   return render(request, 'index.html')
