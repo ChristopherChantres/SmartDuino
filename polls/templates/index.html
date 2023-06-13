@@ -55,7 +55,12 @@
           <form method='POST'>
             {% csrf_token %}
             <input type="hidden" value="7" name="id">
-            <button class="final-button">Lightshow 1</button>
+            <button class="final-button-lightshow">Lightshow 1</button>
+          </form>
+          <form method="POST">
+            {% csrf_token %}
+            <input type="hidden" value="8" name="id">
+            <button class="final-button-lightshow">Lightshow 2</button>
           </form>
         </div>
       </div>

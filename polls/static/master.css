@@ -39,6 +39,7 @@ main {
   border-radius: 15px;
   font-weight: bold;
   font-size: 1.3rem;
+  cursor: pointer;
 }
 
 .blue-button {
@@ -50,6 +51,7 @@ main {
   border-radius: 15px;
   font-weight: bold;
   font-size: 1.3rem;
+  cursor: pointer;
 }
 
 .green-button {
@@ -61,6 +63,7 @@ main {
   border-radius: 15px;
   font-weight: bold;
   font-size: 1.3rem;
+  cursor: pointer;
 }
 
 .yellow-button {
@@ -72,6 +75,7 @@ main {
   border-radius: 15px;
   font-weight: bold;
   font-size: 1.3rem;
+  cursor: pointer;
 }
 
 .final-button {
@@ -83,6 +87,19 @@ main {
   border-radius: 15px;
   font-weight: bold;
   font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.final-button-lightshow {
+  width: 220px;
+  height: var(--btn-clr-height);
+  color: white;
+  background-color: rgb(17, 200, 158);
+  border: 2px solid #00f3ff;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer;
 }
 
 .container-colors {
@@ -108,7 +125,7 @@ footer {
 
 .container-author {
   text-align: center;
-  color: rgb(0, 42, 38);
+  color: rgb(0, 70, 63);;
 }
 
 footer p {
