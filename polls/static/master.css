@@ -1,6 +1,7 @@
 :root {
   --btn-clr-width: 150px;
   --btn-clr-height: 100px;
+  --blue-light-neon: #00f3ff;
 }
 
 body {
@@ -19,7 +20,7 @@ main {
 }
 
 .title {
-  border-bottom: 2px solid #00f3ff;
+  border-bottom: 2px solid var(--blue-light-neon);
   text-align: center;
   padding-bottom: 1rem;
   padding-top: 1rem;
@@ -35,7 +36,7 @@ main {
   height: var(--btn-clr-height);
   color: white;
   background-color: red;
-  border: 2px solid #00f3ff;
+  border: 2px solid var(--blue-light-neon);
   border-radius: 15px;
   font-weight: bold;
   font-size: 1.3rem;
@@ -47,7 +48,7 @@ main {
   height: var(--btn-clr-height);
   color: white;
   background-color: rgb(0, 123, 255);
-  border: 2px solid #00f3ff;
+  border: 2px solid var(--blue-light-neon);
   border-radius: 15px;
   font-weight: bold;
   font-size: 1.3rem;
@@ -59,7 +60,7 @@ main {
   height: var(--btn-clr-height);
   color: white;
   background-color: rgb(102, 255, 0);
-  border: 2px solid #00f3ff;
+  border: 2px solid var(--blue-light-neon);
   border-radius: 15px;
   font-weight: bold;
   font-size: 1.3rem;
@@ -71,7 +72,7 @@ main {
   height: var(--btn-clr-height);
   color: white;
   background-color: rgb(255, 217, 0);
-  border: 2px solid #00f3ff;
+  border: 2px solid var(--blue-light-neon);
   border-radius: 15px;
   font-weight: bold;
   font-size: 1.3rem;
@@ -83,22 +84,23 @@ main {
   height: var(--btn-clr-height);
   color: white;
   background-color: rgb(0, 11, 10);
-  border: 2px solid #00f3ff;
+  border: 2px solid var(--blue-light-neon);
   border-radius: 15px;
   font-weight: bold;
   font-size: 1.3rem;
   cursor: pointer;
 }
 
-.final-button-lightshow {
+.lightshow-button {
   width: 220px;
   height: var(--btn-clr-height);
   color: white;
-  background-color: rgb(17, 200, 158);
-  border: 2px solid #00f3ff;
+  background-color: rgba(70, 86, 83, 0.53);;
+  border: 2px solid var(--blue-light-neon);
   border-radius: 15px;
   font-weight: bold;
   font-size: 1.3rem;
+  margin-top: 20px;
   cursor: pointer;
 }
 
@@ -119,7 +121,7 @@ main {
 }
 
 footer {
-  border-top: 2px solid #00f3ff;
+  border-top: 2px solid var(--blue-light-neon);
   margin-top: 2rem;
 }
 

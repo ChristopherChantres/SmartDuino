@@ -109,7 +109,7 @@ def lightshow2():
   delay(.3)
   allON()
   delay(.3)
-  allOff
+  allOff()
 
 notes = {
   'C4': 261.63,

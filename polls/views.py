@@ -19,5 +19,9 @@ def index_view (request):
       allON()
     elif int(id) == 7:
       lightshow1()
+    elif int(id) == 8:
+      lightshow2()
+    elif int(id) == 9:
+      MarioBrossSound()
     print(id)
   return render(request, 'index.html')

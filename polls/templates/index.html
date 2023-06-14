@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Prueba de Arduino</title>
+    <title>SmartDuino</title>
     {% load static %}
     <!-- Bootstrap core CSS -->
     <link href="{% static 'css/slate.css' %}" rel="stylesheet">
@@ -55,12 +56,17 @@
           <form method='POST'>
             {% csrf_token %}
             <input type="hidden" value="7" name="id">
-            <button class="final-button-lightshow">Lightshow 1</button>
+            <button class="lightshow-button">Lightshow 1</button>
           </form>
           <form method="POST">
             {% csrf_token %}
             <input type="hidden" value="8" name="id">
-            <button class="final-button-lightshow">Lightshow 2</button>
+            <button class="lightshow-button">Lightshow 2</button>
+          </form>
+          <form method="POST">
+            {% csrf_token %}
+            <input type="hidden" value="9" name="id">
+            <button class="lightshow-button">Mario Bross</button>
           </form>
         </div>
       </div>
