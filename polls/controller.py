@@ -1,3 +1,4 @@
+# Import pyfirmata, time and random
 import pyfirmata2
 import time
 import random
@@ -5,7 +6,7 @@ import random
 # Define the constant and variables
 PORT = pyfirmata2.Arduino.AUTODETECT
 board = pyfirmata2.Arduino(PORT)
-buzzer_pin = 1 # Buzzer pin
+buzzer_pin = 9 # Buzzer pin
 
 # Function that holds the delay in seconds
 def delay(seconds):
@@ -155,3 +156,9 @@ def MarioBrossSound():
     board.digital[buzzer_pin].write(0)
     allOff()
     delay(.05)
+
+def testing():
+  board.digital[buzzer_pin].write(1)  # Turn on the buzzer
+  time.sleep(1)  # Wait for 1 second
+  board.digital[buzzer_pin].write(0)  # Turn off the buzzer
+  time.sleep(1)  # Wait for 1 second
