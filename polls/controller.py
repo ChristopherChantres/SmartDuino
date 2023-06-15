@@ -61,39 +61,39 @@ def allON():
 # Add a delay between each call to the fnc allPins()
 # Calling the functin allOff() and allON()
 def lightshow1():
-  allPins(1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-  delay(.3)
-  allPins(0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-  delay(.3)
-  allPins(0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-  delay(.3)
-  allPins(0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0)
-  delay(.3)
-  allPins(0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0)
-  delay(.3)
-  allPins(0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0)
-  delay(.3)
-  allPins(0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0)
-  delay(.3)
-  allPins(0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0)
-  delay(.3)
-  allPins(0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
-  delay(.3)
-  allPins(0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
-  delay(.3)
-  allPins(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0)
-  delay(.3)
-  allPins(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1)
-  delay(.3)
-  allOff
-  delay(.3)
-  allON()
-  delay(.3)
-  allOff()
-  delay(.3)
-  allON()
-  delay(.3)
-  allOff()
+  allPins(1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) # Calling the allPins() fnc
+  delay(.3) # Delay .3s
+  allPins(0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) # Calling the allPins() fnc
+  delay(.3) # Delay .3s
+  allPins(0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0) # Calling the allPins() fnc
+  delay(.3) # Delay .3s
+  allPins(0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0) # Calling the allPins() fnc
+  delay(.3) # Delay .3s
+  allPins(0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0) # Calling the allPins() fnc
+  delay(.3) # Delay .3s
+  allPins(0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0) # Calling the allPins() fnc
+  delay(.3) # Delay .3s
+  allPins(0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0) # Calling the allPins() fnc
+  delay(.3) # Delay .3s
+  allPins(0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0) # Calling the allPins() fnc
+  delay(.3) # Delay .3s
+  allPins(0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0) # Calling the allPins() fnc
+  delay(.3) # Delay .3s
+  allPins(0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0) # Calling the allPins() fnc
+  delay(.3) # Delay .3s
+  allPins(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0) # Calling the allPins() fnc
+  delay(.3) # Delay .3s
+  allPins(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1) # Calling the allPins() fnc
+  delay(.3) # Delay .3s
+  allOff() # Turn off all LEDs
+  delay(.3) # Delay .3s
+  allON() # Calling the function allON()
+  delay(.3) # Delay .3s
+  allOff() # Turn off all LEDs
+  delay(.3) # Delay .3s
+  allON() # Calling the function allON()
+  delay(.3) # Delay .3s
+  allOff() # Turn off all LEDs
 
 
 # Lightshow2
@@ -101,29 +101,29 @@ def lightshow1():
 # Add a delay between each call to the fnc allPins()
 # Calling the functin allOff() and allON()
 def lightshow2():
-  allPins(1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-  delay(.3)
-  allPins(1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-  delay(.3)
-  allPins(1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0)
-  delay(.3)
-  allPins(1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0)
-  delay(.3)
-  allPins(1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1)
-  delay(.3)
-  allPins(1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1)
-  delay(.3)
-  allPins(1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1)
-  delay(.3)
-  allPins(1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1)
-  delay(.3)
-  allPins(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-  delay(.3)
-  allOff()
-  delay(.3)
-  allON()
-  delay(.3)
-  allOff()
+  allPins(1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) # Calling the allPins() fnc
+  delay(.3) # Delay .3s
+  allPins(1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0) # Calling the allPins() fnc
+  delay(.3) # Delay .3s
+  allPins(1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0) # Calling the allPins() fnc
+  delay(.3) # Delay .3s
+  allPins(1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0) # Calling the allPins() fnc
+  delay(.3) # Delay .3s
+  allPins(1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1) # Calling the allPins() fnc
+  delay(.3) # Delay .3s
+  allPins(1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1) # Calling the allPins() fnc
+  delay(.3) # Delay .3s
+  allPins(1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1) # Calling the allPins() fnc
+  delay(.3) # Delay .3s
+  allPins(1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1) # Calling the allPins() fnc
+  delay(.3) # Delay .3s
+  allPins(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1) # Calling the allPins() fnc
+  delay(.3) # Delay .3s
+  allOff() # Turn off all LEDs
+  delay(.3) # Delay .3s
+  allON() # Calling the function allON()
+  delay(.3) # Delay .3s
+  allOff() # Turn off all LEDs
 
 def lightshow3():
   allON() # Calling the function allON()
