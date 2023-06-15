@@ -104,6 +104,19 @@ main {
   cursor: pointer;
 }
 
+.alert-button {
+  width: 220px;
+  height: var(--btn-clr-height);
+  color: white;
+  background-color: rgba(171, 20, 20, 0.53);
+  border: 2px solid var(--blue-light-neon);
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
 .container-colors {
   width: 100vw;
   display: flex;

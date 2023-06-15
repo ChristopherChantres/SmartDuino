@@ -22,6 +22,8 @@ def index_view (request):
     elif int(id) == 8:
       lightshow2()
     elif int(id) == 9:
-      MarioBrossSound()
+      lightshow3()
+    elif int(id) == 10:
+      ultimatelightshow()
     print(id)
   return render(request, 'index.html')

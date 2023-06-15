@@ -4,54 +4,62 @@ import time
 import random
 
 # Define the constant and variables
-PORT = pyfirmata2.Arduino.AUTODETECT
-board = pyfirmata2.Arduino(PORT)
-buzzer_pin = 9 # Buzzer pin
+PORT = pyfirmata2.Arduino.AUTODETECT # PORT constant that stores the autodetected port of the arduino
+board = pyfirmata2.Arduino(PORT) # Create the board variable that holds the arudino with its port
+buzzer_pin = 9 # Buzzer set in pin 9
 
 # Function that holds the delay in seconds
 def delay(seconds):
-  time.sleep(seconds)
+  time.sleep(seconds) # Delay "n" amount of seconds
 
-# Define a main functions that hosts 2-13 outputs
+# Define a main functions that hosts 2-13 Arduino outputs
+# Letters a...l are going to be variables so that can hold different states
 def allPins(a, b, c, d, e, f, g, h, i, j, k, l):
-  board.digital[2].write(a)
-  board.digital[3].write(b)
-  board.digital[4].write(c)
-  board.digital[5].write(d)
-  board.digital[6].write(e)
-  board.digital[7].write(f)
-  board.digital[8].write(g)
-  board.digital[9].write(h)
-  board.digital[10].write(i)
-  board.digital[11].write(j)
-  board.digital[12].write(k)
-  board.digital[13].write(l)
+  board.digital[2].write(a) # Set the digital pin 2 ==> a
+  board.digital[3].write(b) # Set the digital pin 3 ==> b
+  board.digital[4].write(c) # Set the digital pin 4 ==> c
+  board.digital[5].write(d) # Set the digital pin 5 ==> d
+  board.digital[6].write(e) # Set the digital pin 6 ==> e
+  board.digital[7].write(f) # Set the digital pin 7 ==> f
+  board.digital[8].write(g) # Set the digital pin 8 ==> g
+  board.digital[9].write(h) # Set the digital pin 9 ==> h
+  board.digital[10].write(i) # Set the digital pin 10 ==> i
+  board.digital[11].write(j) # Set the digital pin 11 ==> j
+  board.digital[12].write(k) # Set the digital pin 12 ==> k
+  board.digital[13].write(l) # Set the digital pin 13 ==> l
 
+# Turn on all red LEDs
 def redOn():
-  allPins(1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-  print("Red ON")
+  allPins(1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0) # Calling the fnc allPins() with the pins to be lit up
+  print("Red ON") # Display in console the action
 
+# Turn on all blue LEDs
 def blueOn():
-  allPins(0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0)
-  print("Green ON")
+  allPins(0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0) # Calling the fnc allPins() with the pins to be lit up
+  print("Green ON") # Display in console the action
 
+# Turn on all green LEDs
 def greenOn():
-  allPins(0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0)
-  print("Blue ON")
+  allPins(0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0) # Calling the fnc allPins() with the pins to be lit up
+  print("Blue ON") # Display in console the action
 
+# Turn on all yellow LEDs
 def yellowOn():
-  allPins(0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1)
-  print("Yellow ON")
+  allPins(0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1) # Calling the fnc allPins() with the pins to be lit up
+  print("Yellow ON") # Display in console the action
 
 def allOff():
-  allPins(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-  print("Turn OFF all")
+  allPins(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) # Calling the fnc allPins() with the pins to be lit up
+  print("Turn OFF all") # Display in console the action
 
 def allON():
-  allPins(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-  print('Turn ON all')
+  allPins(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1) # Calling the fnc allPins() with the pins to be lit up
+  print('Turn ON all') # Display in console the action
 
-# Lightshow1 wiht delay test
+# Lightshow1
+# Calling the fnc allPins with the pins to be lit up
+# Add a delay between each call to the fnc allPins()
+# Calling the functin allOff() and allON()
 def lightshow1():
   allPins(1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
   delay(.3)
@@ -87,6 +95,11 @@ def lightshow1():
   delay(.3)
   allOff()
 
+
+# Lightshow2
+# Calling the fnc allPins with the pins to be lit up
+# Add a delay between each call to the fnc allPins()
+# Calling the functin allOff() and allON()
 def lightshow2():
   allPins(1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
   delay(.3)
@@ -112,53 +125,40 @@ def lightshow2():
   delay(.3)
   allOff()
 
-notes = {
-  'C4': 261.63,
-  'D4': 293.66,
-  'E4': 329.63,
-  'F4': 349.23,
-  'G4': 392.00,
-  'A4': 440.00,
-  'B4': 493.88,
-  'C5': 523.25,
-}
+def lightshow3():
+  allON() # Calling the function allON()
+  delay(2) # Delay 2s
+  allOff() # Calling the function allOff()
+  delay(2) # Delay 2s
+  allON() # Calling the function allON()
+  delay(1) # Delay 1.5s
+  allOff() # Calling the function allOff()
+  delay(.5) # Delay .5s
+  allON() # Calling the function allON()
+  delay(.5) # Delay .5s
+  allOff() # Calling the function allOff()
+  delay(.25) # Delay .25
+  allON() # Calling the function allON()
+  delay(.25) # Delay .25
+  allOff() # Calling the function allOff()
+  delay(.125) # Delay .125s
+  allON() # Calling the function allON()
+  delay(.125) # Delay .125s
+  allOff() # Calling the function allOff()
+  delay(.0625) # Delay .0625s
+  redOn() # Turn on all red LEDs
+  delay(1) # Delay 1s
+  yellowOn() # Turn on all yellow LEDs
+  delay(1) # Delay 1s
+  blueOn() # Turn on all blue LEDs
+  delay(1) # Delay 1s
+  greenOn() # Turn on all green LEDs
+  delay(1) # Delay 1s
+  allOff() # Turn off all LEDs
 
-mario_bross_song = [
-  'E4', 'E4', 'E4', 'C4', 'E4', 'G4', 'G3',
-  'C4', 'G3', 'E3', 'A3', 'B3', 'A#3', 'A3',
-  'G3', 'E4', 'G4', 'A4', 'F4', 'G4', 'E4',
-  'C4', 'D4', 'B3', 'C4', 'G3', 'E3', 'A3',
-  'B3', 'A#3', 'A3', 'G3', 'E4', 'G4', 'A4',
-  'F4', 'G4', 'E4', 'C4', 'D4', 'B3', 'C4',
-  'G3', 'E3', 'A3', 'B3', 'A#3', 'A3', 'G3'
-]
-
-def MarioBrossSound():
-  random_number = random.randint(1, 4)
-  
-  # Iterate each note of the mario bross song
-  for note in mario_bross_song:
-    frequency = notes[note]
-    board.digital[buzzer_pin].write(1)
-    board.send_sysex(0x0B, board.get_pin('d:{}:o'.format(buzzer_pin)).mode)
-    board.send_sysex(0x0B, int(frequency))
-    
-    # Validate if the random number is 1-4. Then turn on "color" LEDs 
-    if random_number == 1:
-      redOn()
-    elif random_number == 2:
-      blueOn()
-    elif random_number == 3:
-      greenOn()
-    elif random_number == 4:
-      yellowOn()
-    delay(.3)
-    board.digital[buzzer_pin].write(0)
-    allOff()
-    delay(.05)
-
-def testing():
-  board.digital[buzzer_pin].write(1)  # Turn on the buzzer
-  time.sleep(1)  # Wait for 1 second
-  board.digital[buzzer_pin].write(0)  # Turn off the buzzer
-  time.sleep(1)  # Wait for 1 second
+# Fucntion that calls all the lightshows and then in calls itself at the end (recursivity)
+def ultimatelightshow():
+  lightshow1() # Calling lightshow1()
+  lightshow2() # Calling lightshow2()
+  lightshow3() # Calling lightshow3()
+  ultimatelightshow()  # Calling ultimatelightshow() again
