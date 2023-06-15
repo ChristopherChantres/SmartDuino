@@ -18,7 +18,7 @@
 
 1. Get this repository by cloning it into your desktop:
 ```
-❯git clone https://github.com/ChristopherChantres/SmartDuino.git
+❯ git clone https://github.com/ChristopherChantres/SmartDuino.git
 ```
 
 2. Create a virtual environment and activate it (either Linux&MacOS or Windows):
@@ -59,7 +59,7 @@ $ source venv/bin/activate
 3. Run the server like this:
 ```python
 # We are using the port 8000
-❯  python3 manage.py runserver 0.0.0.0:8000
+❯ python3 manage.py runserver 0.0.0.0:8000
 ```
 
 4. In your phone or any other device, type your private ip address followed by the port 8000:

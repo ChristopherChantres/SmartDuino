@@ -1,0 +1,8 @@
+asgiref==3.7.2
+backports.zoneinfo==0.2.1
+Django==4.2.2
+pyFirmata==1.1.0
+pyFirmata2==2.4.2
+pyserial==3.5
+sqlparse==0.4.4
+typing-extensions==4.6.3
